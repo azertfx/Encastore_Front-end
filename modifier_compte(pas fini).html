@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Encastore" />
+	<meta name="author" content="Encastore" />
+	<title>Encastore</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-icons/entypo/css/entypo.css">
+	<link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+</head>
+<body>
+	<!--	website	-->
+	<div class="website">
+		<!--	Menu de gauche	-->
+		<header>
+			<nav>
+			  <span class="entypo-menu haut_menu"></span>
+			  <div class="sup_menu">
+			  <img src="images/profile_photo.jpg" alt="profile photo" class="prof_photo" class="img-responsive">
+			  <i><h4>Abderrahim NABAOUI</h4></i>
+			  <i><h5>Vendeur</h5></i>
+			  <ul>
+			    <li class="home"> 
+			      <a href="#"><i class="entypo-home home_icon"></i><span class="span1 vers_droit">Accueil</span><span class="flat_bg"></span></a>
+			    </li>
+			    <li class="list1 vente_panel">
+			      <a href="#vente" class="vente vente_click vente1"><i class="entypo-basket"></i>
+			        <span class="span1 vers_droit vente_panel2">Vente</span><span class="span2  entypo-minus hide_vente_moin vers_droit2"></span>
+			      </a>
+			      <a style="display:none;" href="#vente" class="vente vente_click vente2"><i class="entypo-basket"></i>
+			        <span class="span1 vers_droit vente_panel2">Vente</span><span class="span2  entypo-plus hide_vente_plus vers_droit2"></span>
+			      </a>
+			      <ul class="list2 vente_liste">
+			        <li>
+			          <a href="#Préparation">Préparation d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			        <li >
+			          <a href="#Supervision">Supervision d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			        <li>
+			          <a href="#Conclusion">Conclusion d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="list1 m_compte">
+			      <a href="#compte" class="vente compte_click compte1"><i class="entypo-user"></i>
+			        <span class="span1 vers_droit m_compte2">Mon compte</span><span class="span2  entypo-plus hide_compte_plus compte_top vers_droit2"></span>
+			      </a>
+			      <a href="#compte" style="display:none;" class="vente compte_click compte2"><i class="entypo-user"></i>
+			        <span class="span1 vers_droit m_compte2">Mon compte</span><span class="span2 deca entypo-minus hide_compte_moin vers_droit2"></span>
+			      </a>
+			      <ul class="list2 compte_liste">
+			        <li>
+			          <a href="#">Modifier <span class="span2 entypo-right-open"></span></a>
+			        </li>
+			        <li>
+			          <a href="#">Supprimer <span class="span3 entypo-right-open"></span></a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="list1">
+			      <a href="#compte" class="vente decnx"><i class="entypo-logout"></i>
+			        <span class="span1 vers_droit decnx2">Déconnecte</span>
+			      </a>
+			    </li>
+			  </ul>
+			  </div>
+			</nav>
+		</header>
+		<!--	contenue	-->
+		<section>
+			<div class="haut_page">
+				<form>
+					<input type="text" placeholder="Chercher..."><a href="#" class="entypo-search"></a>
+				</form>
+				<div class="compte_logout">
+					<a href="#" class="entypo-user"></a>
+					<a href="#" class="entypo-logout"></a>
+				</div>
+			</div>
+			<img class="bg_image" src="images/image_bg.jpg" alt="image">
+			<!--	Cercle graphic	-->
+			<div id="myStat1" class="v_venir" data-startdegree="220" data-dimension="300" data-text="75" data-info="Vente à Venir" data-width="20" data-percent="75" data-fgcolor="#FD3B3B" data-bgcolor="#eee"></div>
+			<div id="myStat2" class="v_cours" data-startdegree="220" data-dimension="300" data-text="5" data-info="Vente en Cours" data-width="20" data-percent="60" data-fgcolor="#20DD5C" data-bgcolor="#eee"></div>
+			<div id="myStat3" class="v_valider" data-startdegree="220" data-dimension="300" data-text="13" data-info="Vente Valider" data-width="20" data-percent="20" data-fgcolor="#EF740E" data-bgcolor="#eee"></div>
+			<div id="myStat4" class="v_archivees" data-startdegree="220" data-dimension="300" data-text="23" data-info="Vente Archivées" data-width="20" data-percent="80" data-fgcolor="#B8B8B8" data-bgcolor="#eee"></div>
+			<!--	modifier compte	-->
+			<div class="modifier_compte">
+				<h4>Mon compte</h4>
+			  	<div class="prt1">
+					<img src="images/prophil_compte.png" alt="compte"/>
+			     	<h3>Abderrahim NABAOUI</h3>
+			     	<p>Le Lorem Ipsum est simplement du fauxtextemployé dans la composition et la mise en page avant impression.</p>
+			     	<ul class="count">
+			     		<li>
+			     			<img src="images/prod.png" alt="prod" />
+			     			<h6>Produit</h6>
+			     			<h4>124</h4>
+			     		</li>
+			     		<li>
+			     			<img src="images/compte_vente.png" alt="compte vente" />
+			     			<h6>Vente</h6>
+			     			<h4>124</h4>
+			     		</li>
+			     		<li>
+			     			<img src="images/compte_reste.png" alt="prod" />
+			     			<h6>Reste</h6>
+			     			<h4>124</h4>
+			     		</li>
+			     	</ul>
+				</div>
+				<form role="form">
+				  	<div class="prt2">
+				  	<div class="ttestt">
+					      <div class="col-sm-10">
+					      	<label for="prnm">Prénom <span>:</span> </label>
+					       <i href="#" class="entypo-mail"></i><input type="email" class="form-control focus_clk" id="prnm" placeholder="MAROUAN">
+					      </div>
+					      <div class="col-sm-10">
+					      	<label for="nm">NOM <span>:</span> </label>         
+					        <i href="#" class="entypo-mobile"></i><input type="text" class="form-control focus_clk" id="nm" placeholder="Goussaka">
+					      </div>
+					      <div class="col-sm-10"> 
+					      	<label for="ancmp">Ancien MP <span>:</span> </label>         
+					        <i href="#" class="entypo-key"></i><input type="password" class="form-control focus_clk" id="ancmp" placeholder="******">
+					      </div>
+					      <div class="col-sm-10">
+					     	<label for="nvmp">Nouveau MP <span>:</span> </label> 
+					        <i href="#" class="entypo-key"></i><input type="password" class="form-control focus_clk" id="nvmp" placeholder="******">
+					      </div>
+					      <div class="col-sm-10">  
+					      	<label for="cnfm">Confirmation <span>:</span> </label>
+					        <i href="#" class="entypo-key"></i><input type="password" class="form-control focus_clk" id="cnfm" placeholder="******">
+					      </div>
+					      <div class="col-sm-10">
+					      	<label for="sce">Société <span>:</span> </label>          
+					        <i href="#" class="entypo-home"></i><input type="text" class="form-control focus_clk" id="sce" placeholder="Azert">
+					      </div>
+					      <div class="col-sm-10"> 
+					      	<label for="srt">Siret <span>:</span> </label>         
+					        <i href="#" class="entypo-plus"></i><input type="text" class="form-control focus_clk" id="srt" placeholder="12GHHTT">
+					      </div>
+					      <div class="col-sm-10">
+					      	<label for="eml">Email <span>:</span> </label>          
+					        <i href="#" class="entypo-mail"></i><input type="text" class="form-control focus_clk" id="eml" placeholder="azert@gmail.com">
+					      </div>
+					      <div class="col-sm-10"> 
+					      	<label for="tl">Tel <span>:</span> </label>         
+					        <i href="#" class="entypo-mobile"></i><input type="text" class="form-control focus_clk" id="tl" placeholder="0637852855">
+					      </div>
+					      <div class="col-sm-10">
+					      	<label for="adrs">Adresse  <span>:</span> </label>          
+					        <i href="#" class="entypo-address"></i><input type="text" class="form-control focus_clk" id="adrs" placeholder="agadir">
+					      </div>
+					      <div class="col-sm-10">
+					      	<label for="cpsl">Code Postal <span>:</span> </label>          
+					        <i href="#" class="entypo-code"></i><input type="text" class="form-control focus_clk" id="cpsl" placeholder="12500">
+					      </div>
+					      <div class="col-sm-10"> 
+					      	<label for="vll">Ville <span>:</span> </label>         
+					        <i href="#" class="entypo-home"></i><input type="text" class="form-control focus_clk" id="vll" placeholder="agadir">
+					      </div>
+					      <div class="col-sm-10"> 
+					      	<label for="descp">Description <span>:</span> </label>         
+					        <i href="#" class="entypo-drive"></i>
+					        <textarea class="form-control focus_clk" rows="5" id="descp" placeholder="web designer et développeur web"></textarea>
+
+					      </div>
+
+					      <div style="clear: both;"></div>
+					      <div class="col-sm-offset-1">
+					        <button type="submit" class="btn btn-default">CONNEXION
+					        <i class="entypo-check"></i></button>
+					        <a href="#">Annuler</a>
+					      </div>
+				  	</div>
+				  	</div>
+				</form>
+			</div>
+		</section>
+
+	</div>
+	<!--	fin de website	-->
+	<!--	javascript fichier source	-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,782 @@
+@font-face {font-family: 'Helvetica';src: url('../fonts/HelveticaNeue-Light.otf');}
+*,
+*:before,
+*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+body {font-family: "Helvetica", Helvetica,sans-serif, Arial;letter-spacing: 0.6px;color: #34495e;background-color: #f1f7fd;margin: 0;padding: 0;}
+input,
+button,
+select,
+textarea {font-family: inherit;font-size: inherit;line-height: inherit;}
+a {color: #373e4a;text-decoration: none;}
+a:hover,
+a:focus {color: #818da2;}
+a:focus {outline: thin dotted #333;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+ul li{list-style-type: none;}
+ul{padding: 0;}
+img {vertical-align: middle;display: block;max-width: 100%;height: auto;}
+#clear{clear: both;}
+/*=========================================================================================*\
+                       					 website Menu     
+\*=========================================================================================*/
+.website{width: 100%;display: table;height: 100%;table-layout: fixed;}
+/*========================================================*\
+                        Menu style     
+\*========================================================*/
+header { background-color: #1a2530;height: 100vh; text-align: center;display: table-cell;vertical-align: top;width: 280px;position: relative;z-index: 99;box-sizing: border-box;}
+header li { list-style: none; }
+header .prof_photo {margin: 35px 0px 9px 0px;display: inline;border-radius: 50%;height: auto;width: 73%;border: 4px solid rgba(255, 255, 255, 0.2);}
+header h4 { color: #ffffff; font-size: 23px; }
+header h5 { color: #99a8b7;margin-bottom: 35px;font-size: 18px;}
+header nav ul { text-align: left; padding: 0; }
+header nav ul .home a{text-decoration: none;display: block;width: 103%;background: none repeat scroll 0% 0% #00B4FF;position: relative;left: 0vw;padding: 13px 70px;}
+header nav ul a i{position: relative;right: 66px;color: #FFF;font-size: 27px;line-height: 0px;}
+header nav ul a i.home_icon{display: table-cell;}
+header nav ul .home a .flat_bg{-moz-transform: rotate(30deg);-o-transform: rotate(30deg);-webkit-transform: rotate(30deg);transform: rotate(30deg);width: 35px;height: 68px;background: none repeat scroll 0% 0% #0779A9;position: absolute;z-index: -2;top: 43px;left: 239px;}
+header nav ul .home a .span1, 
+header nav ul .list1 a.vente .span1,
+header nav ul .list1 a.vente .span2{color: #FFF;position: relative;right: 47px;top: 1px;}
+header nav ul .home a .span1{font-size:22px;font-weight: bold;display: table-cell;}
+header nav ul .list1 a.vente .span1,
+header nav ul .list1 a.vente .span2{font-size: 16px;}
+header nav ul .list1 a.vente .span2{ right: 0px;float: right; }
+header nav ul .list1 a.vente .compte_top{position: relative;}
+header nav ul .list1 a.vente{background: none repeat scroll 0% 0% #1A2530;text-decoration: none;display: block;width: 100%;position: relative;left: 0px;padding: 17px 8px 17px 74px;}
+header nav ul .list1 .list2{background:#243241;width: 100%;font-size: 14px;padding: 9px 9px 10px 17px;line-height: 35px;}
+header nav ul .list1 .compte_liste{display:none;}
+header nav ul .list1 .list2 li a{color: #b3bdc6;}
+header nav ul .list1 .list2 li a:hover{color: #fff;}
+header nav ul .list1 .list2 li a span{float: right;}
+header nav ul .list1 a i{font-size: 18px; text-align: center;line-height: 24px;}
+header nav .haut_menu{display: none;}
+/*========================================================*\
+                        contenue style     
+\*========================================================*/
+section{position: relative;display: table-cell;vertical-align: top;width: 100%;}
+/*======================================*\
+            contenue haut page     
+\*======================================*/
+section .haut_page{background:#fff;padding: 1.5% 2.1%;width: 100%;overflow: hidden;}
+section .haut_page form{float: left;width: 83%;}
+section .haut_page .compte_logout{float: right;position: relative;top: 3px;}
+section .haut_page form input{overflow:hidden;padding: 8px;background: #fff;border: 1px solid #b3c7da;border-radius: 5px;width: 35%;}
+section .haut_page form a{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;position: relative;font-size: 20px;top: 3px;color: #B3C7DA;left: -33px;border-left: 1px solid #B3C7DA;padding: 0px 1px;z-index: 99;}
+section .haut_page form a:hover{color:#1A2530;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+section .haut_page .compte_logout a{font-size: 17px;color:#B3C7DA;border: 1px solid #B3C7DA;padding: 6px;position: relative;top: 2px;}
+section .haut_page .compte_logout a:first-child{border-radius: 5px 0px 0px 5px;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+section .haut_page .compte_logout a:first-child:hover{background: #00b4ff;color: #fff;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+section .haut_page .compte_logout a:last-child{border-radius: 0px 5px 5px 0px;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+section .haut_page .compte_logout a:last-child:hover{background: #df4949;color: #fff;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+/*======================================*\
+       		 background image   
+\*======================================*/
+section img.bg_image{width: 100%;z-index: -9;position: absolute;}
+/*======================================*\
+       		 cercle graphique    
+\*======================================*/
+.v_venir .circle-text,
+.v_venir .circle-info-half,
+.v_venir .circliful canvas,
+.v_cours .circle-text,
+.v_cours .circle-info-half,
+.v_cours .circliful canvas,
+.v_valider .circle-text,
+.v_valider .circle-info-half,
+.v_valider .circliful canvas,
+.v_archivees .circle-text,
+.v_archivees .circle-info-half,
+.v_archivees .circliful canvas{position: absolute;width: 15%;text-align: center;line-height: 0 !important;}
+.v_archivees .circle-text,
+.v_archivees .circle-info-half,
+.v_archivees .circliful canvas{color:#B8B8B8;}
+.v_valider .circle-text,
+.v_valider .circle-info-half,
+.v_valider .circliful canvas{color:#EF740E;}
+.v_cours .circle-text,
+.v_cours .circle-info-half,
+.v_cours .circliful canvas{color:#20DD5C;}
+.v_venir .circle-text,
+.v_venir .circle-info-half,
+.v_venir .circliful canvas{color:#FD3B3B;}
+.v_venir .circle-text,
+.v_cours .circle-text,
+.v_valider .circle-text,
+.v_archivees .circle-text{font-size: 2.8vw !important;top: 46%;left: 41%;}
+.v_venir .circle-info-half,
+.v_cours .circle-info-half,
+.v_valider .circle-info-half,
+.v_archivees .circle-info-half{font-size: 0.9vw !important;top: 61%;width: 100%;font-weight: bold;}
+.circliful canvas{width: 85%;margin-top: 6%;margin-left: 7.5%;}
+.circliful {position:absolute;background: none repeat scroll 0% 0% #fff;margin-top: 5%;margin-left: 2.2%;border-radius: 10px;width: 21% !important;}
+.v_cours {margin-left: 26.8%;}
+.v_valider {margin-left: 51.8%;}
+.v_archivees {margin-left: 76.8%;}
+/*======================================*\
+        		Connexion     
+\*======================================*/
+body.cnx_ins_body{background: url(../images/bg_img_nego.jpg) no-repeat center fixed;margin: 11vw auto;}
+#login .tout_cnx,
+#inscription .tout_cnx{box-shadow: 0px 0px 5px #000;-moz-box-shadow: 0px 0px 5px #000;-o-box-shadow: 0px 0px 5px #000;-webkit-box-shadow: 0px 0px 5px #000;}
+#login{text-align: center;}
+#login form  h4{margin-bottom: 47px;border-bottom: 3px solid #0894CE;color: #FFF;font-size: 30px;background: none repeat scroll 0% 0% #00B4FF;padding: 15px 0;margin-top: 0px;}
+#login form .prt1 {height: 460px;background: #ffffff;}
+#login form .prt1 a{margin-top: 20px;margin-left: 65px;font-size: 12px;float: left;color: #CED2D3;border-bottom: 1px solid #CED2D3;}
+#login form .prt1 a:hover{color: #0894ce;}
+#login form .prt1 input{display: table-cell;padding: 0 35px;margin-bottom: 10px;border: 0;background: 0;border-bottom: 1px solid rgb(219, 219, 219);margin-left: 40px;}
+#login form .prt1 span{display: table-cell;color: #ABABAB;font-size: 16px;position: relative;left: 69px;top: 3px;}
+#login form .prt1 button{float: right;margin-right: 63px;color: #FFF;background: none repeat scroll 0% 0% #3ABFF6;border-style: solid;border-color: #0894CE;border-width: 1px 41px 1px 1px;padding: 10px 17px;}
+#login form .prt1 button i{position: relative;left: 47px;}
+#login .wid_inp{display: table;width: 74%;}
+#login .haut_mar{margin-top:25px;}
+#login .parti1_formu{position: relative;top: 55px;}
+#login .form-group{margin-left: -2%;margin-right: 0px;}
+#login form .prt2 {height: 460px;background: #0894ce;}
+#login form .prt2 img{width: 200px;margin-bottom: 42px;padding-top: 56px;}
+#login .col_pad{padding:0;}
+#login form .prt2 .inscription{cursor:pointer;font-size: 18px;color: #ffffff;}
+#login form .prt2 .inscription:hover{color: #95daf7;}
+#login form .prt2 .line {font-size: 15px;margin: 15px 0px;color: #fff;}
+#login form .prt2 .line span{position: relative;bottom: 7px;border-bottom: 1px solid rgba(255, 255, 255, 0.35);padding: 0 40% 0 0;}
+#login form .prt2 button, 
+#login form .prt2 .btn2{color: #FFF;background: none repeat scroll 0px center transparent;border: 1px solid #FFF;margin-bottom: 15px;width: 216px;line-height: 32px;height: 45px;text-align: left;}
+#login form .prt2 button:hover{color:#b9e4f5;border: 1px solid #b9e4f5;}
+#login form .prt2  button i:hover{color:#b9e4f5; }
+#login form .prt2 button i, 
+#login form .prt2 .btn2 i{border-right: 1px solid #FFF;display: block;float: left;width: 31px;margin-right: 15px;}
+#login form .prt2 .ven_ach_ins{display: none;}
+#login form .prt2 .ven_ach_ins a{font-size: 15px;border: 1px solid #fff;width: 140px;display: inline-block;padding: 5px 0;border-radius: 3px;margin: 7px 20px -7px;background: #fff;color: rgb(8, 148, 206);}
+#login form .prt2 .ven_ach_ins a:hover{background: rgba(255,255,255,0);color: #fff;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+/*======================================*\
+        		inscription     
+\*======================================*/
+#inscription{text-align: center;}
+#inscription form  h4{margin: 0px -15px;padding: 15px 0px;background: none repeat scroll 0% 0% #00B4FF;font-size: 30px;border-bottom: 3px solid #0894CE;color: #FFF;width: 103.3%;}
+#inscription form .prt1 {height: 460px;background: #ffffff;}
+.inscr_achte form .prt1 {height: 400px !important;}
+#inscription form .prt1 a{margin-top: 20px;margin-left: 65px;font-size: 12px;float: left;color: #CED2D3;border-bottom: 1px solid #CED2D3;}
+#inscription form .prt1 a:hover{color: #0894ce;}
+#inscription form .prt1 input{display: table-cell;padding: 0 35px;margin-bottom: 10px;border: 0;background: 0;border-bottom: 1px solid rgb(219, 219, 219);margin-left: 33px;}
+#inscription form .prt1 span{display: table-cell;color: #ABABAB;font-size: 16px;position: relative;left: 65px;top: 3px;}
+#inscription form .prt1 button{float: right;margin-right: 63px;color: #FFF;background: none repeat scroll 0% 0% #3ABFF6;border-style: solid;border-color: #0894CE;border-width: 1px 41px 1px 1px;padding: 10px 17px;}
+#inscription form .prt1 button i{position: relative;left: 47px;}
+#inscription .wid_inp{width: 80.5%;display: table;}
+#inscription .haut_mar{margin-top:-6px;}
+#inscription .parti1_formu{position: relative;top: 40px;}
+#inscription .form-group{margin-left: -2%;margin-right: 0px;}
+#inscription .col_pad{padding:0;}
+#inscription form .part2{border-left: 2px solid rgb(219, 219, 219);}
+#inscription form a.deja_cpt{padding: 6px 0px;margin: 0px -15px;background: rgba(0,0,0,0.6);font-size: 15px;color: #FFF;width: 103.3%;display: block;}
+/*======================================================================================*\
+        						Préparation d’une vente     
+\*======================================================================================*/
+section .preparation_vente{width: 100%;margin: 31% 0 auto;padding: 0 2.2%;}
+section .preparation_vente h4{font-size: 25px;color: #0197d6;}
+/*======================================*\
+        		produit etap     
+\*======================================*/
+section .preparation_vente .produit_etap{margin-left: 1.5vw;margin-top: 2vw;}
+section .preparation_vente .produit_etap .prd .prd_text{padding-left: 5.5vw;background:#eaeef2;display: table;float: left;}
+section .preparation_vente .produit_etap .prd .prd_text h1{position: relative;top: 0.3vw;display: table-cell;font-size: 5vw;color:#c4c4c4;}
+section .preparation_vente .produit_etap .prd .prd_text .s_text h2{margin: 0px;font-size: 1.3vw;color:#c4c4c4;}
+section .preparation_vente .produit_etap .prd:first-child .prd_text h1,
+section .preparation_vente .produit_etap .prd:first-child .prd_text .s_text h2,
+section .preparation_vente .produit_etap .prd:first-child .prd_text .s_text h3{color:#fff;}
+section .preparation_vente .produit_etap .prd .prd_text .s_text h3{font-size: 1.05vw;color:#c4c4c4;margin: 0px;top: 0.5vw;position: relative;}
+section .preparation_vente .produit_etap .prd .prd_text .s_text{position: relative;top: -1.9vw;left: 0.5vw;display: table-cell;}
+section .preparation_vente .produit_etap .prd .prd_triangle{-moz-transform: rotate(45deg);-o-transform: rotate(45deg);-webkit-transform: rotate(45deg);transform: rotate(45deg);background:#eaeef2;float: left;position: relative;z-index: -1;border-top: 0.3vw solid rgb(241, 247, 253);border-right: 0.3vw solid rgb(241, 247, 253);margin-left: -2vw;height: 4.4vw;width: 4.4vw;margin-top: 0.78vw;}
+section .preparation_vente .produit_etap .prd:first-child .prd_triangle{border-top-left-radius:0.2vw;background:#59CEFF;}
+section .preparation_vente .produit_etap .prd{margin-left: -3.5vw;float: left;}
+section .preparation_vente .produit_etap .prd:first-child .prd_text{padding-left: 2vw;background:#59CEFF;}
+section .preparation_vente .produit_etap .prd:first-child{margin-left: 0vw;z-index: 10;position: relative;}
+section .preparation_vente .produit_etap .prd:nth-child(2){z-index: 9;position: relative;}
+section .preparation_vente .produit_etap .prd:nth-child(3){z-index: 8;position: relative;}
+section .preparation_vente .produit_etap .prd:nth-child(4){z-index: 7;position: relative;}
+section .preparation_vente .produit_etap .prd:last-child{z-index: 6;position: relative;}
+/*======================================*\
+      vente caracteristique & essai     
+\*======================================*/
+section .preparation_vente .essai{display: none;}
+section .preparation_vente .tt_prd_vente .ss_titre{width: 100%;}
+section .preparation_vente .tt_prd_vente .ss_titre h1{font-size: 20px;margin-left: 1.8%;color: #0197d6;float: left;}
+section .preparation_vente .tt_prd_vente .ss_titre hr{height: 2px;width: 81%;display: block;margin-top: 32px;float: right;border: none;}
+section .preparation_vente .tt_prd_vente form{margin: 0 auto;width: 88%;}
+section .preparation_vente .tt_prd_vente form .form_parti1,
+section .preparation_vente .tt_prd_vente form .form_parti2{width: 47%;margin: 20px 0px;}
+section .preparation_vente .tt_prd_vente form .form_parti1{float:left;}
+section .preparation_vente .tt_prd_vente form .form_parti2{margin-left: 5%;float:right;}
+section .preparation_vente .tt_prd_vente form .form_parti1 input,
+section .preparation_vente .tt_prd_vente form .form_parti2 input{background:#fff;margin: 0px 0px 12px 0px;border: 1px solid rgb(169, 169, 171);border-radius: 5px;font-size: 16px;padding: 0px 19px;width: 100%;height: 45px;}
+section .preparation_vente .tt_prd_vente form .form_parti1 label select,
+section .preparation_vente .tt_prd_vente form .form_parti2 label select{margin: 0px 0px 7px 0px;height: 45px;padding: 0px 19px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 5px;background: #fff;color: rgb(169, 169, 171);border: 1px solid rgb(169, 169, 171);outline: none;display: inline-block;-webkit-appearance: none;-moz-appearance: none;appearance: none;cursor: pointer;width: 100%;font-size: 16px;}
+section .preparation_vente .tt_prd_vente form .form_parti1 label,
+section .preparation_vente .tt_prd_vente form .form_parti2 label{position:relative;width: 100%;}
+section .preparation_vente .tt_prd_vente form .form_parti1 label:after,
+section .preparation_vente .tt_prd_vente form .form_parti2 label:after{content: '<>';font: 20px "Consolas", monospace;color: #A9A9AB;-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);right: 8px;top: 8px;padding: 0 0 5px;border-bottom: 1px solid #A9A9AB;position: absolute;pointer-events: none;}
+section .preparation_vente .tt_prd_vente form .form_parti2 .input-file {position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+section .preparation_vente .tt_prd_vente form .form_parti2 .input-file-trigger:after{content: '' !important;}
+section .preparation_vente .tt_prd_vente form .form_parti2 .input-file-trigger{display: block;padding: 7.5px 24px;background: #fff;color: rgb(169, 169, 171);border:1px solid rgb(169, 169, 171);font-size: 20px;border-radius: 5px;cursor: pointer;}
+section .preparation_vente .tt_prd_vente form .form_parti2 .input-file-trigger span{float: right;margin-right: -19px;font-size: 17px;margin-top: 2px;border-left: 1px solid rgb(169, 169, 171);padding-left: 3px;color: rgb(169, 169, 171);}
+section .preparation_vente .tt_prd_vente hr{border: none;background: #0197d6;height: 2px;width: 100%;margin-top: 0;}
+section .preparation_vente .tt_prd_vente .produit_btn{border-radius: 5px;margin-bottom: 50px;cursor:pointer;float: right;  float: right;background: #00b4ff;width: 200px;font-size: 25px;color: #fff;  height: 55px;line-height: 55px;padding: 0 15px;}
+section .preparation_vente .tt_prd_vente .produit_btn input{background: none;border: medium none;margin-left: -15px;position: absolute;width: 200px;padding-right: 56px;}
+section .preparation_vente .tt_prd_vente .produit_btn label{cursor:pointer;float:right;border-left: 2px solid rgb(8, 154, 216);padding-left: 7px;margin-right: -8px;}
+/*======================================*\
+                vente Etat     
+\*======================================*/
+section .preparation_vente .etat{display: none;}
+section .preparation_vente .etat form .form_parti1 label:after{content: '';}
+section .preparation_vente .etat form .form_parti1 label{color:#A9A9AB;position: absolute;margin-left: -39px;font-size: 20px;margin-top: 10px;border-left: 1px solid #A9A9AB;padding-left: 5px;width: 36px;}
+/*======================================*\
+        vente Negociation & Prix     
+\*======================================*/
+section .preparation_vente .negociation,
+section .preparation_vente .prix{display: none;}
+section .preparation_vente .negociation form .form_parti1 label:after,
+section .preparation_vente .negociation form .form_parti2 label:after,
+section .preparation_vente .prix form .form_parti1 label:after,
+section .preparation_vente .prix form .form_parti2 label:after{content: '';}
+section .preparation_vente .negociation form .form_parti1 label,
+section .preparation_vente .negociation form .form_parti2 label,
+section .preparation_vente .prix form .form_parti1 label,
+section .preparation_vente .prix form .form_parti2 label{cursor:pointer;display: table-cell;position: absolute;font-size: 15px;background: none repeat scroll 0% 0% rgb(0, 180, 255);width: 220px;height: 45px;line-height: 45px;padding-left: 17px;color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+section .preparation_vente .negociation form .form_parti1 input, 
+section .preparation_vente .negociation form .form_parti2 input,
+section .preparation_vente .prix form .form_parti1 input, 
+section .preparation_vente .prix form .form_parti2 input{padding-left: 225px;}
+section .preparation_vente .negociation form .form_parti2 .input-file,
+section .preparation_vente .prix form .form_parti2 .input-file{top: auto;left: auto;opacity:1;}
+/*======================================*\
+        produit felicitation     
+\*======================================*/
+section .preparation_vente .prd_felicitation{margin: 40% auto 0;width: 540px;display: none;}
+section .preparation_vente .prd_felicitation span{color:#fff;float: left;font-size: 100px;height: 143px;line-height: 143px;}
+section .preparation_vente .prd_felicitation .feli_text{float: left;}
+section .preparation_vente .prd_felicitation h1{color:#fff;font-size: 50px;}
+section .preparation_vente .prd_felicitation h2{color:#fff;font-size: 30px;}
+/*======================================*\
+          modifier compte    
+\*======================================*/
+section .modifier_compte{margin-left: 0.80%;margin-top: 31%;height:auto;width: 95%;margin-left:26px;}
+section .modifier_compte h4{color: #0197d6;font-size: 20px;margin-left: 14px;margin-bottom: 14px;}
+section .modifier_compte form{text-align: center;width: 67%;float: left;}
+section .modifier_compte .prt1{border-radius: 6px;margin-bottom: 5px;text-align: center;width: 33%;background: #fff;-webkit-box-shadow: 0px 0px 10px;-o-box-shadow: 0px 0px 10px;-moz-box-shadow: 0px 0px 10px;box-shadow: 0px 0px 10px;height: 811px;float: left;}
+section .modifier_compte .prt1 img{border-top-left-radius: 6px;border-top-right-radius: 6px;}
+section .modifier_compte .prt1 h3{margin-top: 28px;color: #53697e;}
+section .modifier_compte .prt1 p{padding-bottom: 34px;border-bottom: 2px solid #9ba4ad;width: 100%;text-align: center;color: #9ba4ad;margin-top: 17px;font-size: 15px;}
+section .modifier_compte .prt1 .count{position: relative;right: 16px;display:inline-box;display:-o-inline-box;display:-moz-inline-box;display:-webkit-inline-box;}
+section .modifier_compte .prt1 .count li{margin-top: 46px;margin-left: 41px;}
+section .modifier_compte .prt1 .count img{position: relative;left: 7px;}
+section .modifier_compte .prt1 .count h6{}
+section .modifier_compte .prt1 .count h4{position: relative;right: 8px;}
+section .modifier_compte .prt2{border-radius: 6px;background: #fff;margin-left: 8px;box-shadow: 0px 0px 10px;-webkit-box-shadow: 0px 0px 10px;-o-box-shadow: 0px 0px 10px;-moz-box-shadow: 0px 0px 10px;height: auto;}
+section .modifier_compte .col-sm-10 i{color:#6a6d6e;float: left;position: absolute;top: 27px;left: 152px;}
+section .modifier_compte .prt2 button{color:#fff;background: #3abff6;border: 1px solid #0894ce;border-right-width: 24px;}
+section .modifier_compte .prt2 button:hover{color:#9cdaf3;background: #3abff6;}
+section .modifier_compte .prt2 button i{position: relative;left: 31px;}
+section .modifier_compte .prt2 a{font-size: 14px;float: left;color: #ced2d3;border-bottom: 1px solid;margin-top: 14px;}
+section .modifier_compte .prt2 a:hover{color: #0894ce;}
+section .modifier_compte .col-sm-10 label{color:#b3b9bb;width: 31%;text-align: justify;position: relative;top: 25px;float: left;}
+section .modifier_compte .col-sm-10 label span{position: relative;right:45px;float: right;}
+section .modifier_compte .prt2 input{padding-left: 28px;border-top: none;border-left: none;border-right: none;background: 0;border-bottom: 1px solid #b3b9bb;margin-left: 131px;width: 80%;margin-top: 19px;}
+section .modifier_compte .prt2 textarea{padding-left:28px;border: 0;background: 0;border-bottom: 2px solid #b3b9bb;margin-left: 131px;width: 80%;margin-top: 19px;}
+section .modifier_compte .prt2 button{margin-bottom: 11px;color: #fff;background: #3abff6;border: 1px solid #0894ce;border-right-width: 25px;margin-top: 12px;}
+section .modifier_compte .prt2 button i{position: relative;left: 32px;}
+/*======================================*\
+           Supprimer Compte    
+\*======================================*/
+body.supprimer_compte_body{background:#fe6969;}
+section .compte_supprimer{margin-top:32%;width:100%;height:386px;background:#fe6969;}
+section .compte_supprimer .center {}
+section .compte_supprimer .center img{margin-bottom: 101px;position: relative;top: 50px;}
+section .compte_supprimer .center p{font-size: 20px;margin-bottom: 46px;color: #fff;}
+section .compte_supprimer .center .btn1{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;margin-right: 47px;color:#fe6969;background: #ffffff;border: 0;width: 117px;height: 38px;}
+section .compte_supprimer .center .btn1:hover{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;color:#fff;background: rgba(255,255,255,0);border: 1px solid #fff;}
+section .compte_supprimer .center .btn2{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;color:#fff;border:1px solid #fff;background:0;width: 117px;height: 38px;}
+section .compte_supprimer .center .btn2:hover{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;color:#fe6969;background:#fff;}
+/*======================================*\
+          Supervision d’une vente    
+\*======================================*/
+section .supervision_vente{margin-left: 0.80%;margin-top: 31%;height:auto;width: 95%;margin-left:26px;}
+section .supervision_vente h4{color: #0197d6;font-size: 20px;margin-left: 14px;margin-bottom: 14px;}
+section .supervision_vente .prt1{width: 103%;margin-left: -11px;height: 100px;}
+section .supervision_vente .entes_cours{display: none;}
+section .supervision_vente .entes_valider{display: none;}
+section .supervision_vente .entes_archives{display: none;}
+section .supervision_vente .prt1 .prt1_btn{float: left;width: 25%;text-align: center;}
+section .supervision_vente .prt1 .prt1_btn  .entypo-back-in-time{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #e27a3f;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+section .supervision_vente .prt1 .prt1_btn  .entypo-tag{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #df4949;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+section .supervision_vente .prt1 .prt1_btn  .entypo-check{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #efc94c;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+section .supervision_vente .prt1 .prt1_btn  .entypo-floppy{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #1ed7d5;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+section .supervision_vente .prt1 .prt1_btn .btn1{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #e27a3f;height: 63px;width: 71%;color: #fff;font-size: 19px;}
+section .supervision_vente .prt1 .prt1_btn .btn2{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #df4949;height: 63px;width: 71%;color: #fff;font-size: 19px;}
+section .supervision_vente .prt1 .prt1_btn .btn3{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #efc94c;height: 63px;width: 71%;color: #fff;font-size: 19px;}
+section .supervision_vente .prt1 .prt1_btn .btn4{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #1ed7d5;height: 63px;width: 71%;color: #fff;font-size: 19px;}
+/*======================================*\
+          Conclusion d’une vente   
+\*======================================*/
+section .conclusion_vente{margin-top: 31%;height:auto;width: 95%;margin-left:30px;}
+section .conclusion_vente h4{color: #0197d6;font-size: 20px;margin-bottom: 14px;}
+section .conclusion_vente h5{margin-bottom: 18px;margin-left: 35px;}
+section .conclusion_vente .prt1{margin-bottom: 5px;margin-left: 9px;width:59%;border-radius: 6px;margin-right:1%;background: #fff;box-shadow: 0px 0px 5px;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;height:407px;float: left;}
+section .conclusion_vente .prt1 .prt1_contnu1 {height: 46%;width:100%;background: #f7f9fb;}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre1{float: left;margin-left: 40px;top: 32px;position: relative;width: 45%;}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre1 img{}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2{margin-left:83px;top:32px;position: relative;}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2 h4{}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2 p{color: #b2bdc7;}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2 p span{}
+section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2 div span{}
+section .conclusion_vente .prt1 .prt1_contnu2{}
+section .conclusion_vente .prt1 .prt1_contnu2 img{position: relative;bottom: 6px;width: 88%;}
+section .conclusion_vente .prt1 .prt1_contnu2 td{border-bottom: 2px solid #e0e0e0;line-height: 17px;font-size: 13px;}
+section .conclusion_vente .prt1 .prt1_contnu2 th{color: #fff;}
+section .conclusion_vente .prt2{width:38%;height: 407px;text-align: center;float: left;}
+section .conclusion_vente .prt2 form{float: left;width: 107%;margin-left: 0px;margin-top: -41px;}
+section .conclusion_vente .prt2 form input{overflow:hidden;padding: 8px;background: #fff;border: 1px solid #b3c7da;border-radius: 5px;width: 91%;}
+section .conclusion_vente .prt2 form a{-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;position: relative;font-size: 20px;top: 3px;color: #B3C7DA;left: -33px;border-left: 1px solid #B3C7DA;padding: 0px 1px;z-index: 99;}
+section .conclusion_vente .prt2 form a:hover{color:#1A2530;-moz-transition: .6s;-o-transition: .6s;-webkit-transition: .6s;transition: .6s;}
+section .conclusion_vente .prt2 .prt2_contnu2{border-radius: 6px;width:100%;background: #fff;box-shadow: 0px 0px 5px;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;height:407px;float: left;}
+section .conclusion_vente .prt2 .prt2_contnu2 h1{color: #00b4ff;font-size: 47px;}
+section .conclusion_vente .prt2 .prt2_contnu2 .center{background: #00b4ff;width: 100%;color: #ffffff;float: left;border-top-left-radius: 6px;border-top-right-radius: 6px;height: 271px;margin-bottom: 37px;}
+section .conclusion_vente .prt2 .prt2_contnu2 .center h4{margin-top: 25px;color: #fff;}
+section .conclusion_vente .prt2 .prt2_contnu2 .center img{width: 28%;position: relative;top: 8px;}
+
+section .conclusion_vente .prt3 {margin-left: 9px;width:100%;height:630px;}
+section .conclusion_vente .prt3 .prt3_contnu1{margin-right: 5px;border-radius: 6px;margin-bottom: 5px;text-align: center;width: 24%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 596px;float: left;margin-left: 1px;}
+section .conclusion_vente .prt3 .prt3_contnu1 img{border-top-left-radius: 6px;border-top-right-radius: 6px;}
+section .conclusion_vente .prt3 .prt3_contnu1 h3{margin-top: 28px;color: #53697e;}
+section .conclusion_vente .prt3 .prt3_contnu1 p{padding-bottom: 34px;border-bottom: 2px solid #9ba4ad;width: 100%;text-align: center;color: #9ba4ad;margin-top: 17px;font-size: 15px;}
+section .conclusion_vente .prt3 .prt3_contnu1 .count{position: relative;right: 29px;display:inline-box;display:-webkit-inline-box;display:-moz-inline-box;display:-o-inline-box;}
+section .conclusion_vente .prt3 .prt3_contnu1 .count li{margin-top: 46px;margin-left: 41px;}
+section .conclusion_vente .prt3 .prt3_contnu1 .count img{position: relative;left: 1px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================*\
+        		responsive     
+\*======================================*/
+@media (min-width: 1200px) { 
+	/*body{background: red;}*/
+	/******************		connexion		*******************/
+	#login .tout_cnx{width: 960px;}
+	#login .part1{width: 40%;}
+	#login .part2{width: 60%;}
+	/******************		inscription		*******************/
+	#inscription .tout_cnx{width: 960px;}
+  /******************   modifier compte   *******************/
+  section .modifier_compte {margin-left: 0.80%;margin-top: 31%;height: auto;width:96%;margin-left: 26px;}
+  section .modifier_compte .col-sm-10 label span {position: relative;right: 86px;float: right;}
+  section .modifier_compte .prt1 img {width: 100%;}
+  /*****************      Supervision d’une vente           ******************/
+  section .supervision_vente .prt1 .prt1_btn {margin-left: -5px;}
+}
+@media (min-width: 979px) and (max-width: 1200px) { 
+	/*body{background: pink;}*/
+	/******************		connexion		*******************/
+	#login .tout_cnx{width: 960px;}
+	#login .part1{width: 40%;}
+	#login .part2{width: 60%;}
+	/******************		inscription		*******************/
+	#inscription .tout_cnx{width: 960px;}
+	/******************		preparation vente		*******************/
+	section .preparation_vente .produit_etap .prd:first-child .prd_text{padding-left: 1vw;}
+	section .preparation_vente .produit_etap .prd{margin-left: -4.1vw;}
+  /***   vente tt_prd_vente  ***/
+	section .preparation_vente .tt_prd_vente .ss_titre hr{width: 71%;}
+  /***   vente negociation & prix  ***/
+  section .preparation_vente .negociation form .form_parti1 label,
+  section .preparation_vente .negociation form .form_parti2 label,
+  section .preparation_vente .prix form .form_parti1 label,
+  section .preparation_vente .prix form .form_parti2 label{font-size: 12px;width: 185px;}
+  section .preparation_vente .negociation form .form_parti1 input, 
+  section .preparation_vente .negociation form .form_parti2 input,
+  section .preparation_vente .prix form .form_parti1 input, 
+  section .preparation_vente .prix form .form_parti2 input{padding-left: 190px;}
+  /******************   modifier compte   *******************/
+  section .modifier_compte .col-sm-10 label span {position: relative;right: 18px;}
+  section .modifier_compte .prt1 .count li {margin-top: 46px;margin-left: 28px;}
+  /*****************      compte supprimer         ******************/
+  section .compte_supprimer{height: 456px;}
+  /*****************      Supervision d’une vente           ******************/
+  section .supervision_vente .prt1{margin-left: -5px;width: 103%;margin-left: -11px;height: 100px;}
+  section .supervision_vente .prt1 .prt1_btn{float: left;width: 25%;text-align: center;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-back-in-time{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #e27a3f;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-tag{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #df4949;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-check{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #efc94c;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-floppy{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 7px 18px 7px;background: #1ed7d5;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #e27a3f;height: 63px;width: 69%;color: #fff;font-size: 15px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #df4949;height: 63px;width: 69%;color: #fff;font-size: 15px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #efc94c;height: 63px;width: 69%;color: #fff;font-size: 15px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #1ed7d5;height: 63px;width: 69%;color: #fff;font-size: 15px;}
+  section .supervision_vente .table-responsive {border: none;width: 100%;margin-bottom: 12.75px;overflow-y: hidden;overflow-x: scroll;-ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch;}
+  section .supervision_vente .prt1 .prt1_btn .btn1 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn {margin-left: -3px;}
+  /************** Conclusion d’une vente  ********/
+  section .conclusion_vente  {margin-left: 16px;}
+  section .conclusion_vente .prt2 form {width: 109%;margin-left: -2px;}
+  section .conclusion_vente .prt2 form input {overflow: hidden;padding: 8px;background: #fff;border: 1px solid #b3c7da;border-radius: 5px;width:87%;}
+  section .conclusion_vente .prt1 .prt1_contnu2 img {width: 34px;}
+  section .conclusion_vente .prt1 .prt1_contnu2 th:first-child {width: 12%;}
+  section .conclusion_vente .prt3 .prt3_contnu1 {margin-right: 8px;border-radius: 6px;margin-bottom: 5px;text-align: center;width: 47%;background: #fff;box-shadow: 0px 0px 5px;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;height: 666px;float: left;margin-left: 13px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:first-child{margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(3){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(4){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:last-child{margin-right: 0;}
+  section .conclusion_vente .prt3 .prt3_contnu1 img {border-top-left-radius: 6px;border-top-right-radius: 6px;width: 100%;}
+  section .conclusion_vente .prt3 {margin-left:0px;width: 101%;height: 630px;}
+}
+@media (min-width: 768px) and (max-width: 979px) { 
+	/*body{background: yellow;}*/
+	/******************		Menu		*******************/
+	header {width: 170px;}
+	header .prof_photo {margin: 12px 0px 0px;}
+	header h4 {font-size: 14px;}
+	header h5 {margin-bottom: 12px;font-size: 14px;}
+	header nav ul .home a {padding: 13px 11px;}
+	header nav ul a i {right: 10px;font-size: 21px;}
+	header nav ul .home a .span1 {font-size: 16px;}
+	header nav ul .list1 a.vente {padding: 17px 0px 17px 13px;}
+	header nav ul .list1 a.vente .span1, 
+	header nav ul .list1 a.vente .span2 {font-size: 13px;}
+	header nav ul .list1 .list2 {font-size: 10px;padding: 9px 9px 10px 17px;}
+	header nav ul .home a .span1, 
+	header nav ul .list1 a.vente .span1, 
+	header nav ul .list1 a.vente .span2 {right: 8px;}
+	header nav ul .home a .flat_bg {left: 125px;top: 36px;}
+	/******************		inscription		*******************/
+	#inscription form  h4,
+	#inscription form a.deja_cpt{width: 104.2%;}
+	#inscription form .prt1 button {margin-right: 36px;}
+	/******************		preparation vente		*******************/
+	section .preparation_vente .produit_etap .prd .prd_text .s_text h3 {font-size: 1.3vw;}
+	section .preparation_vente .produit_etap .prd .prd_text h1 {font-size: 4.6vw;}
+	section .preparation_vente .produit_etap .prd {margin-left: -4.1vw;}
+  /***   vente tt_prd_vente  ***/
+	section .preparation_vente .tt_prd_vente .ss_titre hr{width: 67%;}
+  /***   vente negociation & prix  ***/
+  section .preparation_vente .negociation form .form_parti1 label,
+  section .preparation_vente .negociation form .form_parti2 label,
+  section .preparation_vente .prix form .form_parti1 label,
+  section .preparation_vente .prix form .form_parti2 label{font-size: 12px;width: 168px;padding-left: 7px;}
+  section .preparation_vente .negociation form .form_parti1 input, 
+  section .preparation_vente .negociation form .form_parti2 input,
+  section .preparation_vente .prix form .form_parti1 input, 
+  section .preparation_vente .prix form .form_parti2 input{padding-left: 173px;font-size: 16px;}
+  /******************   modifier compte   *******************/
+  section .modifier_compte .col-sm-10 label span {position: relative;right:0px;}
+  section .modifier_compte .prt1 {margin-left: -12px;}
+  section .modifier_compte .prt1 .count li {margin-top: 46px;margin-left: 18px;}
+  section .modifier_compte form {width: 65%;}
+  section .modifier_compte h4 {margin-left: -11px;}
+  section .modifier_compte .prt1 .count h4 {position: relative;right: -6px;}
+  section .modifier_compte .prt1 .count img {position: relative;left: 0px;}
+  section .modifier_compte .prt2 input {padding-left: 28px;border: 0;background: 0;border-bottom: 2px solid #b3b9bb;margin-left: 131px;width: 75%;margin-top: 19px;}
+  /****************        compte supprimer ******************/
+  section .compte_supprimer {height: 443px;}
+  /*****************      Supervision d’une vente           ******************/
+  section .supervision_vente .prt1{margin-left: -5px;width: 103%;margin-left: -11px;height: 100px;}
+  section .supervision_vente .prt1 .prt1_btn{margin-left: -4px;float: left;width: 25%;text-align: center;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-back-in-time{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #e27a3f;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-tag{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #df4949;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-check{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #efc94c;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-floppy{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #1ed7d5;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #e27a3f;height: 63px;width: 73%;color: #fff;font-size: 13.5px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #df4949;height: 63px;width: 73%;color: #fff;font-size: 13.5px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #efc94c;height: 63px;width: 73%;color: #fff;font-size: 13.5px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #1ed7d5;height: 63px;width: 73%;color: #fff;font-size: 13.5px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4 span{position: relative;left: -7px;}
+  section .supervision_vente .table-responsive {border: none;width: 100%;margin-bottom: 12.75px;overflow-y: hidden;overflow-x: scroll;-ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch;}
+  /************** Conclusion d’une vente  ********/
+  section .conclusion_vente {margin-top: 31%;height: auto;width: 95%;margin-left: 18px;}
+  section .conclusion_vente .prt2 form {width: 94%;position: relative;left: 15px;}
+  section .conclusion_vente .prt2 form input {width: 84%;}
+  section .conclusion_vente .prt1 .prt1_contnu1 .chapitre1 {float: left;margin-left: 4px;top: 32px;position: relative;width: 39%;}
+  section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2 {margin-left: 151px;top: 32px;position: relative;}
+  section .conclusion_vente .prt1 .prt1_contnu2 img {width: 34px;}
+  section .conclusion_vente .prt1 .prt1_contnu2 th:first-child {width: 12%;}
+  section .conclusion_vente .prt2 .prt2_contnu2 {border-radius: 6px;width: 96%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 407px;float: left;}
+  section .conclusion_vente .prt3 .prt3_contnu1 {margin-right: 8px;border-radius: 6px;margin-bottom: 5px;text-align: center;width: 46%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 596px;float: left;margin-left: 12px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:first-child{margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(3){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(4){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:last-child{margin-right: 0;}
+  section .conclusion_vente .prt3 .prt3_contnu1 img {border-top-left-radius: 6px;border-top-right-radius: 6px;width: 100%;}
+  section .conclusion_vente .prt3 {margin-left:0px;width: 101%;height: 630px;}
+}
+@media (max-width: 767px) {
+	/*body{background: green;}*/
+	/******************		Menu		*******************/
+	header {width: 35px;}
+	header .prof_photo {width: 83%;border: 2px solid rgba(255, 255, 255, 0.2);margin:-1px 0px 10px}
+	header h4 {position: absolute;display:none;font-size: 14px;background:#1A2530;left: 35px;top: 18px;width: 183px;padding: 8px 0px 26px;}
+	header h5 {position: absolute;display:none;margin-bottom: 12px;font-size: 14px;left: 35px;top: 42px;width: 183px;}
+	header nav ul .home a {padding: 13px 11px;width: 100%}
+	header nav ul a i {right: 10px;font-size: 21px;}
+	header nav ul .home a .span1 {display:none;font-size: 16px;background: #00B4FF;width: 183px;top: 0px !important;padding: 12px 0px 12px 10px;}
+	header nav ul .list1 a.vente {padding: 17px 0px 17px 13px;}
+	header nav ul .list1 a.vente .span1, 
+	header nav ul .list1 a.vente .span2 {font-size: 13px;background: #1A2530;width: 183px;top: 0 !important;padding: 20px 0px 19px 10px;}
+	header nav ul .list1 .list2 {font-size: 10px;padding: 9px 9px 10px 17px;width: 183px;}
+	header nav ul .home a .span1, 
+	header nav ul .list1 a.vente .span1, 
+	header nav ul .list1 a.vente .span2 {right: 8px;}
+	header nav ul .home a .flat_bg {display: none;}
+	header nav ul .list1 .compte_liste,
+	header nav ul .list1 .vente_liste,
+	header nav ul .list1 a.vente .decnx2,
+	header nav ul .list1 a.vente .vente_panel2,
+	header nav ul .list1 a.vente .m_compte2{display: none;}
+	header nav .haut_menu{display:block;color: #fff;font-size: 24px;padding: 2px 0.5px;cursor: pointer;}
+	/******************		haut page		*******************/
+	.vers_droit{position: absolute !important;top: 24px !important;left: 35px;}
+	.list2{position: absolute !important;left: 35px;}
+	.vers_droit2{display: none;}
+	section .haut_page form {z-index:9;position: relative;width: 81%;}
+	section .haut_page form input {width: 50%;}
+	body{overflow-x:hidden;}
+	/******************		connexion		*******************/
+	#login .wid_inp {width: 91.6%;}
+	#login form .prt1 button{margin-right: 9%;}
+	#login form .prt1 input {margin-left: -1.5%;}
+	#login form .prt1 span {left: 7.2%;}
+	#login form .prt1 a {margin-left: 8%;}
+	#login .parti1_formu {top: 4px;}
+	#login form .prt1 {height: 350px;}
+	/******************		inscription		*******************/
+	#inscription form  h4,
+	#inscription form a.deja_cpt{width: 98vw;}
+	#inscription form .prt1 button {margin-right: 55px;}
+	#inscription .wid_inp {width: 90.3%;display: table;}
+	#inscription form .part2 {border:none;}
+	#inscription .formu_parti2{}
+  .inscr_achte .formu_parti2 {top: -82px !important;}
+	#inscription .haut_mar {margin-top: 37px;}
+	#inscription form .prt1 input {margin-left: 2%;}
+	#inscription form .prt1 span {left: 9.5%;}
+	#inscription form .prt1 a {margin-left: 10%;}
+	/******************		preparation vente		*******************/
+	section .preparation_vente .produit_etap .prd .prd_triangle{border-top-left-radius:5px;margin-left: -2.5vw;height: 5.2vw;width: 5.2vw;margin-top: 0.86vw;}
+	section .preparation_vente .produit_etap .prd .prd_text .s_text h3{font-size: 1.5vw;}
+	section .preparation_vente .produit_etap .prd .prd_text .s_text h2{font-size: 1.8vw;}
+	section .preparation_vente .produit_etap .prd:first-child .prd_text {padding-left: 1vw;}
+	section .preparation_vente .produit_etap .prd .prd_text{padding-left: 6.5vw;height: 6.99vw;}
+	section .preparation_vente .produit_etap .prd {margin-left: -4.7vw;}
+  section .preparation_vente .produit_etap .prd .prd_text h1{top: 0.7vw;font-size: 4.5vw;}
+  section .preparation_vente .produit_etap .prd .prd_text .s_text {position: relative;top: -1vw;}
+  /***   vente tt_prd_vente  ***/
+	section .preparation_vente .tt_prd_vente .ss_titre hr{width: 57%;}
+	section .preparation_vente .tt_prd_vente form .form_parti2 {margin-left: 0;float: none;}
+	section .preparation_vente .tt_prd_vente form .form_parti1, 
+	section .preparation_vente .tt_prd_vente form .form_parti2 {width: 100%;margin: 0 0px;}
+	section .preparation_vente .tt_prd_vente form {margin:20px auto 30px;width: 96%;}
+	section .preparation_vente .tt_prd_vente hr {width: 95.7%;}
+	section .preparation_vente .tt_prd_vente .ss_titre {width: 97.7%;}
+  /***   vente negociation & prix  ***/
+  section .preparation_vente .prix form .form_parti2 label.top_lbl,
+  section .preparation_vente .negociation form .form_parti2 label.top_lbl{margin-top: 171px;}
+  /***   produit felicitation  ***/
+  section .preparation_vente .prd_felicitation span{font-size: 68px;height: 97px;line-height: 97px;}
+  section .preparation_vente .prd_felicitation h1 {font-size: 25px;}
+  section .preparation_vente .prd_felicitation h2 {font-size: 17px;}
+  section .preparation_vente .prd_felicitation {width: 340px;}
+  /******************   modifier compte   *******************/
+  section .modifier_compte .prt1 {border-radius: 6px;margin-bottom: 5px;margin-left: -11px;text-align: center;width:100%;background: #fff;-webkit-box-shadow: 0px 0px 10px;-o-box-shadow: 0px 0px 10px;-moz-box-shadow: 0px 0px 10px;box-shadow: 0px 0px 10px;height: auto;float: none;}
+  section .modifier_compte .prt1 img {border-top-left-radius: 6px;border-top-right-radius: 6px;width: 100%;}
+  section .modifier_compte form{text-align: center;width:100%;float: left;margin-left: -20px;}
+  section .modifier_compte .prt2 input {width: 70%;}
+  section .modifier_compte .col-sm-10 label span {position: relative;right: 29px;}
+  section .modifier_compte .prt2 a {position: relative;left: 27px;}
+  section .modifier_compte .prt1 .count li {margin-left: 85px;}
+  section .modifier_compte .prt1 .count img {position: relative;left: 0px;}
+  section .modifier_compte .prt1 .count {position: relative;right: 34px;}
+  section .modifier_compte .col-sm-10 label span {display: none;}
+  /****************        compte supprimer ******************/
+
+  section .compte_supprimer {margin-top: 29%;width: 100%;height: 490px;background: #fe6969;}
+  /*****************      Supervision d’une vente           ******************/
+  section .supervision_vente .prt1{margin-left: -5px;width: 103%;margin-left: -11px;height: 100px;}
+  section .supervision_vente .prt1 .prt1_btn{margin-left: -4px;float: left;width: 25%;text-align: center;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-back-in-time{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #e27a3f;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-tag{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #df4949;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-check{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #efc94c;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-floppy{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #1ed7d5;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #e27a3f;height: 63px;width: 65%;color: #fff;font-size: 10px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #df4949;height: 63px;width: 65%;color: #fff;font-size: 10px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #efc94c;height: 63px;width: 65%;color: #fff;font-size: 10px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #1ed7d5;height: 63px;width: 65%;color: #fff;font-size: 10px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4 span{position: relative;left: -7px;}
+  section .supervision_vente .table-responsive{border:none;margin-left: -9px;}
+   /************** Conclusion d’une vente  ********/
+  section .conclusion_vente {margin-top: 31%;height: 927px;width: 95%;margin-left: 8px;}
+  section .conclusion_vente .prt1 {margin-left: 4px;width: 100%;border-radius: 6px;background: #fff;box-shadow: 0px 0px 5px;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;height: 412px;margin-bottom: 57px;}
+  section .conclusion_vente .prt1 .prt1_contnu1 .chapitre1 {float: left;margin-left: 17px;top: 32px;position: relative;width: 49%;}
+  section .conclusion_vente .prt1 .prt1_contnu2 img {width: 34px;}
+  section .conclusion_vente .prt1 .prt1_contnu2 th:first-child {width: 12%;}
+  section .conclusion_vente .prt2 {margin-bottom: 272px;width:100%;height: 130px;margin-left: 4px;float: left;}
+  section .conclusion_vente .prt2 form {float: left;width: 108%;margin-left: -6px;margin-top: -41px;}
+  section .conclusion_vente .prt2 .prt2_contnu2 .center {height: 304px;margin-bottom: 16px;}
+  section .conclusion_vente .prt2 .prt2_contnu2 {border-radius: 6px;width: 100%;background: #fff;box-shadow: 0px 0px 5px;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;height: 390px;float: left;}
+  section .conclusion_vente .prt3 {margin-left: 0px;width: 103%;height: 630px;}
+  section .conclusion_vente .prt3 .prt3_contnu1 {margin-right: 2px;border-radius: 6px;margin-bottom: 5px;text-align: center;width: 48%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 596px;float: left;margin-left: 5px;  }
+  section .conclusion_vente .prt3 .prt3_contnu1:first-child{margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(3){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(4){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:last-child{margin-right: 0;}
+  section .conclusion_vente .prt3 .prt3_contnu1 img {border-top-left-radius: 6px;border-top-right-radius: 6px;width: 100%;}
+  section .conclusion_vente .prt3 .prt3_contnu1 .count li {margin-top: 46px;margin-left: 30px;}
+  section .conclusion_vente .prt3 .prt3_contnu1 .count {position: relative;right: 15px;display: inline-box;display: -webkit-inline-box;}
+}
+@media (max-width: 480px) { 
+	/*body{background: blue;}*/
+	body{overflow-x:hidden;}
+	/******************		haut page		*******************/
+	section .haut_page form {width: 62%;}
+	section .haut_page form input {width: 75%;font-size: 10px;}
+	section img.bg_image{-moz-transform:scale(5.88);-o-transform:scale(5.88);-webkit-transform:scale(5.88);}
+	/******************		cercle graphic		*******************/
+	.v_valider {margin-left: 2.4%;margin-top: 52%;}
+	.v_archivees {margin-left: 51.8%;margin-top: 52%;}
+	.v_cours {margin-left: 51.8%;}
+	.circliful {width: 46% !important;border-radius: 5px;}
+	.v_venir .circle-info-half, 
+	.v_cours .circle-info-half, 
+	.v_valider .circle-info-half, 
+	.v_archivees .circle-info-half {font-size: 2.3vw !important;}
+	.v_venir .circle-text, 
+	.v_cours .circle-text, 
+	.v_valider .circle-text, 
+	.v_archivees .circle-text {font-size: 6vw !important;}
+	/******************		inscription		*******************/
+	#inscription form .prt1 button{margin-right: 34px;}
+	#inscription form .prt1 a{margin-left: 8%;}
+  #login form .prt2 .ven_ach_ins a {display: block;margin: 12px auto;}
+  #login form .prt2 {height: 510px;}
+	/******************		preparation vente		*******************/
+  section .preparation_vente h4{font-size: 15px;color: #0197d6;}
+	section .preparation_vente .produit_etap .prd:first-child .prd_text .s_text {display: block;}
+	section .preparation_vente {margin-top: 102%;}
+	section .preparation_vente .produit_etap .prd .prd_text .s_text h2 {font-size: 3.5vw;}
+	section .preparation_vente .produit_etap .prd .prd_text .s_text {top: 0vw;display: none;}
+	section .preparation_vente .produit_etap .prd .prd_triangle {margin-left: -4.5vw;height: 9.1vw;width: 9.1vw;margin-top: 1.6vw;}
+	section .preparation_vente .produit_etap .prd .prd_text {padding-left: 6.3vw;height: 12.3vw;}
+	section .preparation_vente .produit_etap .prd {margin-left: -4vw;}
+	section .preparation_vente .produit_etap .prd .prd_text h1 {top: 2.5vw;font-size: 7vw;}
+	section .preparation_vente .produit_etap .prd .prd_text .s_text h3{font-size: 2.3vw;}
+  /***   vente tt_prd_vente  ***/
+	section .preparation_vente .tt_prd_vente h4 {font-size: 11px;}
+	section .preparation_vente .tt_prd_vente .ss_titre h1{font-size: 10px;}
+	section .preparation_vente .tt_prd_vente .ss_titre hr {width: 56%;margin-top: 24px;height: 1px;}
+	section .preparation_vente .tt_prd_vente hr {height: 1px;}
+	section .preparation_vente .tt_prd_vente .produit_btn {width: 140px;font-size: 16px;height: 36px;line-height: 36px;padding: 0 5px;}
+	section .preparation_vente .tt_prd_vente .produit_btn input {width: 140px;margin-left: -5px;}
+	section .preparation_vente .tt_prd_vente .produit_btn label {margin-right: 2px;}
+  section .preparation_vente .etat form .form_parti1 input{font-size: 13px;}
+  /***   vente negociation & prix  ***/
+  section .preparation_vente .negociation form .form_parti1 label,
+  section .preparation_vente .negociation form .form_parti2 label,
+  section .preparation_vente .prix form .form_parti1 label,
+  section .preparation_vente .prix form .form_parti2 label{font-size: 10px;width: 143px;height: 40px;line-height: 40px;padding-left: 5px;}
+  section .preparation_vente .negociation form .form_parti1 input, 
+  section .preparation_vente .negociation form .form_parti2 input,
+  section .preparation_vente .prix form .form_parti1 input, 
+  section .preparation_vente .prix form .form_parti2 input{height: 40px;padding-left: 148px;font-size: 10px !important;}
+  section .preparation_vente .negociation form .form_parti2 label.top_lbl,
+  section .preparation_vente .prix form .form_parti2 label.top_lbl{margin-top: 156px;}
+  section .preparation_vente .essai form .form_parti1 input, 
+  section .preparation_vente .essai form .form_parti2 input,
+  section .preparation_vente .essai form .form_parti1 label select, 
+  section .preparation_vente .essai form .form_parti2 label select{font-size: 13px;}
+  /***   produit felicitation  ***/
+  section .preparation_vente .prd_felicitation{text-align: center;width: 225px;}
+  section .preparation_vente .prd_felicitation span{float: none;font-size: 50px;}
+  section .preparation_vente .prd_felicitation .feli_text{float: none;}
+  section .preparation_vente .prd_felicitation h1 {font-size: 23px;}
+  section .preparation_vente .prd_felicitation h2 {font-size: 15px;}
+  /******************   modifier compte   *******************/
+  section .modifier_compte .prt1 .count li {margin-left: 36px;}
+  section .modifier_compte {margin-top: 104%;}
+  section .modifier_compte .prt2 input {padding-left: 13px;border: 0;background: 0;border-bottom: 2px solid #b3b9bb;margin-left: 76px;margin-top: 0px;}
+  section .modifier_compte .col-sm-10 i {position: absolute;left: 86px;top: 25px;}
+  section .modifier_compte .col-sm-10 label {font-size: 10px;}
+  section .modifier_compte .col-sm-10 label span{display: none;}
+  section .modifier_compte .prt1 {margin-left: -20px;}
+  section .modifier_compte .prt2 {margin-left: 0px;}
+  section .modifier_compte h4 {margin-left: 4px;}
+  /****************        compte supprimer ******************/
+  section .compte_supprimer {margin-right: 47px;margin-top: 100%;width: 100%;height: 405px;background:#fe6969;}
+  section .compte_supprimer .center .btn1 {margin-right: 0;}
+  /*****************      Supervision d’une vente           ******************/
+  section .supervision_vente {margin-top: 105%;height: auto;width: 95%;margin-left: -2px;}
+  section  .supervision_vente .prt1{margin-left: -5px;width: 103%;margin-left: -11px;height: 100px;}
+  section .supervision_vente .prt1 .prt1_btn:first-child{margin-left: 10px;float: left;width: 46%;text-align: center;}
+  section .supervision_vente .prt1 .prt1_btn:nth-child(2){float: left;width: 18%;}
+  section .supervision_vente .prt1 .prt1_btn:nth-child(3){float: left;width: 18%;}
+  section .supervision_vente .prt1 .prt1_btn:last-child{float: left;width: 18%;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-back-in-time{top: 5px;color: #fff;font-size: 23px;border-right: 2px solid #ba5a23;padding: 18px 0px 18px 0px;background: #e27a3f;position: relative;left: 5px;border-top-left-radius: 6px;border-bottom-left-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .icons{border-right:0;top: 16px;color: #fff;font-size: 23px;padding: 18px 3px 18px 0px;background: #df4949;position: relative;border-radius: 6px;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-tag{background: #df4949;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-check{background: #efc94c;}
+  section .supervision_vente .prt1 .prt1_btn  .entypo-floppy{background: #1ed7d5;}
+  section .supervision_vente .prt1 .prt1_btn .btn1{border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #e27a3f;height: 63px;width: 66%;color: #fff;font-size: 12px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2{display: none;border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #df4949;height: 63px;width: 66%;color: #fff;font-size: 12px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3{display: none;border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #efc94c;height: 63px;width: 66%;color: #fff;font-size: 12px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4{display: none;border-top-right-radius: 7px;border-bottom-right-radius: 6px;border: 0;background: #1ed7d5;height: 63px;width: 66%;color: #fff;font-size: 12px;}
+  section .supervision_vente .prt1 .prt1_btn .btn1 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn2 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn3 span{position: relative;left: -7px;}
+  section .supervision_vente .prt1 .prt1_btn .btn4 span{position: relative;left: -7px;}
+  section .supervision_vente .table-responsive{border:none;margin-left: 9px;}
+ /************** Conclusion d’une vente  ********/
+  section .conclusion_vente {margin-top: 105%;height: 927px;width: 95%;margin-left: 11px;}
+  section .conclusion_vente .prt1 {margin-left: -2px;width: 100%;border-radius: 6px;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 520px;margin-bottom: 57px;}
+  section .conclusion_vente  .prt1 .prt1_contnu1 {height: 62%;width: 100%;background: #f7f9fb;}
+  section .conclusion_vente .prt1 .prt1_contnu1 .chapitre1 {margin-left: 37px;top: 13px;position: relative;width: 68%;}
+  section .conclusion_vente .prt1 .prt1_contnu1 .chapitre2{margin-left: 13px;top: 32px;position: relative;float: left;}
+  section .conclusion_vente .prt1 .prt1_contnu2 img {width: 34px;}
+  section .conclusion_vente .prt1 .prt1_contnu2 th:first-child {width: 12%;}
+  section .conclusion_vente .prt2 {margin-bottom: 7px;width: 100%;height: 395px;margin-left: -2px;float: left;}
+  section .conclusion_vente .prt2 form {float: left;width: 108%;margin-left: 5px;margin-top: -41px;}
+  section .conclusion_vente .prt2 .prt2_contnu2 .center {height: 274px;margin-bottom: 31px;}
+  section .conclusion_vente .prt2 .prt2_contnu2 {border-radius: 6px;width: 100%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 389px;float: left;}
+  section .conclusion_vente .prt2 form input {overflow: hidden;padding: 8px;background: #fff;border: 1px solid #b3c7da;border-radius: 5px;width: 86%;}
+  section .conclusion_vente .prt3 {margin-left: 0px;width: 103%;height: 630px;}
+  section .conclusion_vente .prt3 .prt3_contnu1 {margin-right: 2px;border-radius: 6px;margin-bottom: 5px;text-align: center;width: 99%;background: #fff;-webkit-box-shadow: 0px 0px 5px;-o-box-shadow: 0px 0px 5px;-moz-box-shadow: 0px 0px 5px;box-shadow: 0px 0px 5px;height: 596px;float: left;margin-left: -6px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:first-child{margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(3){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:nth-child(4){margin-right:4px;}
+  section .conclusion_vente .prt3 .prt3_contnu1:last-child{margin-right: 0;}
+  section .conclusion_vente .prt3 .prt3_contnu1 img {border-top-left-radius: 6px;border-top-right-radius: 6px;width: 100%;}
+  section .conclusion_vente .prt3 .prt3_contnu1 .count li {margin-top: 46px;margin-left: 30px;}
+  section .conclusion_vente .prt3 .prt3_contnu1 .count {position: relative;right: 15px;display: inline-box;display: -webkit-inline-box;}
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Encastore" />
+	<meta name="author" content="Encastore" />
+	<title>Encastore</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-icons/entypo/css/entypo.css">
+	<link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+</head>
+<body>
+	<!--	website	-->
+	<div class="website">
+		<!--	Menu de gauche	-->
+		<header>
+			<nav>
+			  <span class="entypo-menu haut_menu"></span>
+			  <div class="sup_menu">
+			  <img src="images/profile_photo.jpg" alt="profile photo" class="prof_photo" class="img-responsive">
+			  <i><h4>Abderrahim NABAOUI</h4></i>
+			  <i><h5>Vendeur</h5></i>
+			  <ul>
+			    <li class="home"> 
+			      <a href="#"><i class="entypo-home home_icon"></i><span class="span1 vers_droit">Accueil</span><span class="flat_bg"></span></a>
+			    </li>
+			    <li class="list1 vente_panel">
+			      <a href="#vente" class="vente vente_click vente1"><i class="entypo-basket"></i>
+			        <span class="span1 vers_droit vente_panel2">Vente</span><span class="span2  entypo-minus hide_vente_moin vers_droit2"></span>
+			      </a>
+			      <a style="display:none;" href="#vente" class="vente vente_click vente2"><i class="entypo-basket"></i>
+			        <span class="span1 vers_droit vente_panel2">Vente</span><span class="span2  entypo-plus hide_vente_plus vers_droit2"></span>
+			      </a>
+			      <ul class="list2 vente_liste">
+			        <li>
+			          <a href="#Préparation">Préparation d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			        <li >
+			          <a href="#Supervision">Supervision d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			        <li>
+			          <a href="#Conclusion">Conclusion d’une vente<span  class="entypo-right-open"></span></a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="list1 m_compte">
+			      <a href="#compte" class="vente compte_click compte1"><i class="entypo-user"></i>
+			        <span class="span1 vers_droit m_compte2">Mon compte</span><span class="span2  entypo-plus hide_compte_plus compte_top vers_droit2"></span>
+			      </a>
+			      <a href="#compte" style="display:none;" class="vente compte_click compte2"><i class="entypo-user"></i>
+			        <span class="span1 vers_droit m_compte2">Mon compte</span><span class="span2 deca entypo-minus hide_compte_moin vers_droit2"></span>
+			      </a>
+			      <ul class="list2 compte_liste">
+			        <li>
+			          <a href="#">Modifier <span class="span2 entypo-right-open"></span></a>
+			        </li>
+			        <li>
+			          <a href="#">Supprimer <span class="span3 entypo-right-open"></span></a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="list1">
+			      <a href="#compte" class="vente decnx"><i class="entypo-logout"></i>
+			        <span class="span1 vers_droit decnx2">Déconnecte</span>
+			      </a>
+			    </li>
+			  </ul>
+			  </div>
+			</nav>
+		</header>
+		<!--	contenue	-->
+		<section>
+			<div class="haut_page">
+				<form>
+					<input type="text" placeholder="Chercher..."><a href="#" class="entypo-search"></a>
+				</form>
+				<div class="compte_logout">
+					<a href="#" class="entypo-user"></a>
+					<a href="#" class="entypo-logout"></a>
+				</div>
+			</div>
+			<img class="bg_image" src="images/image_bg.jpg" alt="image">
+			<!--	Cercle graphic	-->
+			<div id="myStat1" class="v_venir" data-startdegree="220" data-dimension="300" data-text="75" data-info="Vente à Venir" data-width="20" data-percent="75" data-fgcolor="#FD3B3B" data-bgcolor="#eee"></div>
+			<div id="myStat2" class="v_cours" data-startdegree="220" data-dimension="300" data-text="5" data-info="Vente en Cours" data-width="20" data-percent="60" data-fgcolor="#20DD5C" data-bgcolor="#eee"></div>
+			<div id="myStat3" class="v_valider" data-startdegree="220" data-dimension="300" data-text="13" data-info="Vente Valider" data-width="20" data-percent="20" data-fgcolor="#EF740E" data-bgcolor="#eee"></div>
+			<div id="myStat4" class="v_archivees" data-startdegree="220" data-dimension="300" data-text="23" data-info="Vente Archivées" data-width="20" data-percent="80" data-fgcolor="#B8B8B8" data-bgcolor="#eee"></div>
+			<!--	Supervision d’une vente	-->
+			<div class="supervision_vente">
+				<h4>Supervision d’une vente</h4>
+			  	<div class="prt1">
+			  		<div class="prt1_btn">
+			  			<i href="#" class="entypo-back-in-time"></i>
+			  			<button type="submit" class="btn btn1 btn-default"><span>Ventes à
+			  				 venir</span></button>
+					</div>
+					<div class="prt1_btn">
+						<i href="#" class="entypo-tag icons"></i>
+			  			<button type="submit" class="btn btn2 btn-default"><span>Ventes en<i></i> cours</span></button>
+					</div>
+					<div class="prt1_btn">
+						<i href="#" class="entypo-check icons"></i>
+			  			<button type="submit" class="btn btn3 btn-default"><span>Ventes à<i></i> valider</span></button>
+					</div>
+					<div class="prt1_btn">
+						<i href="#" class="entypo-floppy icons"></i>
+			  			<button type="submit" class="btn btn4 btn-default"><span>Ventes<i></i>  archivées</span></button>
+					</div>
+				</div>
+				<div class="table-responsive entes_venir">
+				<table class="table">
+				    <thead>
+				      <tr bgcolor="#e27a3f" >
+				        <th>REF ARTICLE</th>
+				        <th>DESIGNATION </th>
+				        <th>Type de vente</th>
+				        <th>nbr.visiteurs</th>
+				        <th>nbr.inscrits</th>
+				        <th>Taux intérêt </th>
+				        <th>P.étiquette </th>
+				        <th>P.entrée</th>
+				        <th>Remise</th>
+				        <th>Début</th>
+				        <th>Fin</th>
+				        <th>Avant le départ</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr bgcolor="#f3eeee">
+				        <td>00001</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#eecebe">
+				      	<td>00002</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#f3eeee">
+				      	<td>00003</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#eecebe">
+				      	<td>00004</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#f3eeee">
+				      	<td>00005</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+				<div class="table-responsive entes_cours">
+				<table class="table">
+				    <thead>
+				      <tr bgcolor="#df4949">
+				        <th>REF ARTICLE</th>
+				        <th>DESIGNATION </th>
+				        <th>Type de vente</th>
+				        <th>nbr.visiteurs</th>
+				        <th>nbr.inscrits</th>
+				        <th>Taux intérêt </th>
+				        <th>P.étiquette </th>
+				        <th>P.entrée</th>
+				        <th>Remise</th>
+				        <th>Début</th>
+				        <th>Fin</th>
+				        <th>Avant le départ</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr bgcolor="#ffffff">
+				        <td>00001</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#fae0e0">
+				      	<td>00002</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#ffffff">
+				      	<td>00003</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#fae0e0">
+				      	<td>00004</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#ffffff">
+				      	<td>00005</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+				<div class="table-responsive entes_valider">
+				<table class="table">
+				    <thead>
+				      <tr bgcolor="#efc94c">
+				        <th>REF ARTICLE</th>
+				        <th>DESIGNATION </th>
+				        <th>Type de vente</th>
+				        <th>nbr.visiteurs</th>
+				        <th>nbr.inscrits</th>
+				        <th>Taux intérêt </th>
+				        <th>P.étiquette </th>
+				        <th>P.entrée</th>
+				        <th>Remise</th>
+				        <th>Début</th>
+				        <th>Fin</th>
+				        <th>Avant le départ</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr bgcolor="#ffffff">
+				        <td>00001</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#fcf2d2">
+				      	<td>00002</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#ffffff">
+				      	<td>00003</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#fcf2d2">
+				      	<td>00004</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#ffffff">
+				      	<td>00005</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+				<div class="table-responsive entes_archives">
+				<table class="table">
+				    <thead>
+				      <tr bgcolor="#1ed7d5">
+				        <th>REF ARTICLE</th>
+				        <th>DESIGNATION </th>
+				        <th>Type de vente</th>
+				        <th>nbr.visiteurs</th>
+				        <th>nbr.inscrits</th>
+				        <th>Taux intérêt </th>
+				        <th>P.étiquette </th>
+				        <th>P.entrée</th>
+				        <th>Remise</th>
+				        <th>Début</th>
+				        <th>Fin</th>
+				        <th>Avant le départ</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr bgcolor="#ffffff">
+				        <td>00001</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#d0fbfb">
+				      	<td>00002</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				      <tr bgcolor="#ffffff">
+				      	<td>00003</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#d0fbfb">
+				      	<td>00004</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>      
+				      <tr bgcolor="#ffffff">
+				      	<td>00005</td>
+				        <td>Mini Modèle 2013 </td>
+				        <td>Public</td>
+				        <td>23</td>
+				        <td>23</td>
+				        <td>25%</td>
+				        <td>£ 000 45</td>
+				        <td>£ 000 45</td>
+				        <td>25%</td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>22/04/2015 01:50 </td>
+				        <td>31:48:07 </td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+			</div>
+		</section>
+
+	</div>
+	<!--	fin de website	-->
+	<!--	javascript fichier source	-->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
